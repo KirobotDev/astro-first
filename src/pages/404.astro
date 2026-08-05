@@ -1,0 +1,48 @@
+---
+import "../styles/index.css";
+---
+
+<html lang="fr">
+  <head>
+    <title>404 - Page introuvable</title>
+  </head>
+
+  <body>
+    <main class="error">
+      <h1>404</h1>
+      <p>Oups... cette page exite pas</p>
+      <a href="/">Retour</a>
+    </main>
+  </body>
+</html>
+
+<style>
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8rem;
+  color: rgb(20, 212, 3);
+  margin: 0;
+}
+
+a {
+  margin-top: 2rem;
+  color: white;
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+</style>

@@ -1,0 +1,63 @@
+---
+import "../../styles/index.css";
+import "../../styles/blog/blog.css";
+
+import image from "../../assets/favicon.png";
+import rootme from "../../assets/rootme.png";
+
+let lang = "fr";
+const title = "First Website in Astrojs";
+---
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href={image.src} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(4, 219, 4);">> Yanis Dubok's Website_</h1>
+
+    <nav class="nav">
+      <ul class="ul-list">
+        <li class="nav-list">
+          <a href="/">[ HOME ]</a>
+        </li>
+        <li class="nav-list">
+          <a href="/project">[ SOON ]</a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <section class="section">
+            <h2 id="blgs">
+                ## Blog
+            </h2>
+            <h3 id="thgs">
+                Thoughts, tutorials, updates and random stuff about &lt;code&gt;life&lt;/code&gt;, coding and cybersecurity.
+            </h3>
+            <img src={rootme.src} alt="root me logo" id="immmg">
+        </section>
+        <section class="section section2">
+          <h2 id="bld">
+              Building My First Website in astro
+          </h2>
+          <p class="first-blog">
+            How i built this website using astro, deployed it, and cistomized it to match my terminal style.
+          </p>
+          <p id="date-first">
+            05/08/2026
+          </p>
+          <a href="/blog/astro-website-history" id="blssg">
+            [ Read More ]
+          </a>
+        </section>
+    </main>
+        <hr id="hrrr">
+        <footer>
+          <span style="color: rgb(11, 204, 11);">></span>2026 - Yanis Dubok First Website in astro
+        </footer>
+  </body>
+</html>

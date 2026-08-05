@@ -1,0 +1,74 @@
+---
+import image from "../assets/favicon.png";
+import css from "../styles/index.css";
+import dev from "../assets/dev.gif";
+let lang = "fr";
+const title = "First Website in Astrojs";
+---
+
+<link rel="stylesheet" href={css}>
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href={image.src} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(4, 219, 4);">> Yanis Dubok's Website_</h1>
+
+    <nav class="nav">
+      <ul class="ul-list">
+        <li class="nav-list">
+          <a href="/">[ HOME ]</a>
+        </li>
+        <li class="nav-list">
+          <a href="/blog/blog">[ BLOG ]</a>
+        </li>
+        <li class="nav-list">
+          <a href="/project">[ SOON ]</a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <section class="section">
+            <div>
+                <h2 id="abtme">
+                    ## About Me
+                </h2>
+                <p class="about-me-p" style="width: 25rem;">
+                    Hey, I'm Yanis.
+                    I'm a 17 Year old developer who loves coding,
+                    self-hosting, cybersecurity and building cool things.
+                    <p class="about-me-p" style="width: 17.1rem; max-width: 20rem;">
+                        I daily drive <span style="color: rgb(0, 140, 255);">Linux</span> and I love open source. 
+                    </p>
+                    <p class="about-me-p">
+                        I alose work on <a href="https://discord.com/users/1356430365774053448">Discord</a>
+                    </p>
+                </p>
+            </div>
+                <img src={dev.src} alt="dev image" id="imgdev">
+        </section>
+
+        <section class="section" id="stc">
+            <h2 id="hdblog">
+                ## Latest blog posts
+            </h2>
+            <p id="pppps">
+              05/08/2026
+            </p>
+            <a href="/blog/astro-website-history" id="astr">
+              Building my personal website with Astro
+            </a>
+        </section>
+        <hr id="hrrr">
+        <footer>
+          > 2026 - Yanis Dubok First Website in astro
+        </footer>
+    </main>
+  </body>
+</html>

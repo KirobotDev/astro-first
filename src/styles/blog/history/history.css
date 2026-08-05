@@ -1,0 +1,40 @@
+.post {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.post h2 {
+    margin-bottom: .4rem;
+}
+
+.meta {
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.features {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.features li {
+    margin: .6rem 0;
+}
+
+.post footer {
+    margin-top: 2rem;
+}
+
+#cbxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "VT323", monospace;
+    font-size: 1.4rem;
+    transition: 0.25s ease-in;
+}
+
+#cbxs:hover {
+    transform: translateY(-5px);
+}
