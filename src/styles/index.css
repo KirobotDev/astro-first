@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "VT323", monospace;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list {
+	font-family: "VT323", monospace;
+	list-style: none;
+	display: inline;
+	margin: 10px;
+}
+
+a {
+	color: #a03eff;
+}
+
+/* ANCHOR ici on met le hr en style c'est nouveau donc a gardé  */
+
+hr {
+	border: none;
+	height: 0.5px;
+	background-color: white;
+}
+
+.section {
+	border: 2px dashed white;
+	display: flex;
+	width: 50%;
+	max-width: 50rem;
+	height: 35vh;
+	margin: 2rem auto;
+}
+
+#abtme {
+	font-family: cursive;
+	margin-left: 1.5rem;
+	max-width: 20.3rem;
+	min-height: 10.3rem;
+	color: rgb(187, 41, 65);
+	background: none;
+}
+
+.about-me-p {
+	position: relative;
+	width: 10rem;
+	margin-left: 1rem;
+	max-width: 30rem;
+	min-width: 10rem;
+	top: -8rem;
+	background: none;
+}
+
+#imgdev {
+	width: 20rem;
+	height: 15rem;
+	max-width: 20rem;
+	max-height: 15rem;
+	min-width: 1rem;
+	margin: 2rem;
+	border: 2px dashed red;
+	background: none;
+}
+
+#hdblog {
+	font-family: cursive;
+	max-width: 20.3rem;
+	color: rgb(187, 41, 65);
+	display: flex;
+	justify-content: center;
+	padding-left: 1.5rem;
+	background: none;
+}
+
+#stc {
+	height: 21vh;
+}
+
+#hrrr {
+	border: none;
+	height: 0.5px;
+	background-color: white;
+	position: relative;
+	top: 7rem;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 8rem;
+	background: none;
+}
+
+#pppps {
+	color: rgb(4, 194, 4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: -15.7rem;
+	background: none;
+}
+
+#astr {
+	background: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 3rem;
+	margin-top: -0.2rem;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 1265px) {
+	#imgdev {
+		display: none;
+	}
+}
+
+@media (max-height: 789px) {
+	#imgdev {
+		display: none;
+	}
+}
+
+@media (max-width: 784px) {
+	.section {
+		width: 90%;
+		min-height: 20vh;
+	}
+}
