@@ -19,3 +19,6 @@ jobs:
 
       - name: Installation, build et upload de votre site
         uses: withastro/action@v3
+        with:
+          node-version: 24
+          package-manager: pnpm@latest
