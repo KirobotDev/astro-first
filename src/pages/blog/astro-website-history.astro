@@ -9,9 +9,10 @@ import rootme from "../../assets/rootme.png";
 let lang = "fr";
 const title = "First Website in Astrojs";
 ---
+
 <html lang={lang}>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href={image.src} />
     <meta charset="UTF-8" />
     <title>{title}</title>
@@ -22,62 +23,62 @@ const title = "First Website in Astrojs";
     <nav class="nav">
       <ul class="ul-list">
         <li class="nav-list">
-          <a href="/">[ HOME ]</a>
+          <a href={import.meta.env.BASE_URL}>[ HOME ]</a>
         </li>
         <li class="nav-list">
-          <a href="/blog/blog">[ BLOG ]</a>
+          <a href={`${import.meta.env.BASE_URL}blog/blog`}>[ BLOG ]</a>
         </li>
         <li class="nav-list">
-          <a href="/project">[ SOON ]</a>
+          <a href={`${import.meta.env.BASE_URL}project`}>[ SOON ]</a>
         </li>
       </ul>
     </nav>
-    <hr>
+    <hr />
 
     <main>
-<article class="post">
-  <header>
-    <h2>I built my first website with Astro.</h2>
+      <article class="post">
+        <header>
+          <h2>I built my first website with Astro.</h2>
 
-    <p class="meta">
-      <time datetime="2026-08-05">August 05, 2026</time> |
-      astro, web, html, css, javascript, portfolio
-    </p>
-  </header>
+          <p class="meta">
+            <time datetime="2026-08-05">August 05, 2026</time> | astro, web, html,
+            css, javascript, portfolio
+          </p>
+        </header>
 
-  <p>
-    I decided to build my first real website using Astro.
-  </p>
+        <p>I decided to build my first real website using Astro.</p>
 
-  <p>
-    The goal was simple: create a fast, lightweight, and terminal-inspired
-    personal website where I can share my projects, blog posts, and
-    experiments.
-  </p>
+        <p>
+          The goal was simple: create a fast, lightweight, and terminal-inspired
+          personal website where I can share my projects, blog posts, and
+          experiments.
+        </p>
 
-  <ul class="features">
-    <li>🖥️ Built with Astro for speed and simplicity</li>
-    <li>🎨 Custom retro terminal design inspired by Linux consoles</li>
-    <li>📚 Dedicated blog to document my learning journey</li>
-    <li>🚀 Optimized for performance and responsiveness</li>
-    <li>🔧 Fully self-coded from scratch</li>
-  </ul>
+        <ul class="features">
+          <li>🖥️ Built with Astro for speed and simplicity</li>
+          <li>🎨 Custom retro terminal design inspired by Linux consoles</li>
+          <li>📚 Dedicated blog to document my learning journey</li>
+          <li>🚀 Optimized for performance and responsiveness</li>
+          <li>🔧 Fully self-coded from scratch</li>
+        </ul>
 
-  <p>
-    This is only the beginning. I'll continue improving the website by adding
-    new features, projects, and articles as I learn new technologies.
-  </p>
+        <p>
+          This is only the beginning. I'll continue improving the website by
+          adding new features, projects, and articles as I learn new
+          technologies.
+        </p>
 
-  <p>
-    Thanks for visiting, and I hope you enjoy following my journey!
-  </p>
-  </article>
+        <p>Thanks for visiting, and I hope you enjoy following my journey!</p>
+      </article>
 
-  <a href="https://github.com/kirobotdev/astro-first" id="cbxs">[ Code Website ]</a>
+      <a href="https://github.com/kirobotdev/astro-first" id="cbxs"
+        >[ Code Website ]</a
+      >
     </main>
-        <hr id="hrrr">
-        <footer>
-          <span style="color: rgb(11, 204, 11);">></span>2026 - Yanis Dubok First Website in astro
-        </footer>
+    <hr id="hrrr" />
+    <footer>
+      <span style="color: rgb(11, 204, 11);">></span>2026 - Yanis Dubok First
+      Website in astro
+    </footer>
   </body>
 </html>
